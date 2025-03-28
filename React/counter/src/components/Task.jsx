@@ -1,8 +1,8 @@
-export function Task({task, index, deleteTask}) {
+export function Task({ index, task, deleteTask }) {
     return (
         <div className="task">
-            <p>{props.task}</p>
-            <button onClick={() => props.delete(props.index)}>Delete</button>
+            <p>{task}</p>
+            <button onClick={() => deleteTask(index)}>Delete</button>
         </div>
     );
 }

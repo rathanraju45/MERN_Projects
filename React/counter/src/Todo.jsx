@@ -22,7 +22,7 @@ export function Todo() {
             <div id="task-container">
                 {
                     tasks.map((task, index) => {
-                        return <Task key={index} index={index} task={task} delete={deleteTask} />
+                        return <Task key={index} index={index} task={task} deleteTask={deleteTask} />
                     })
                 }
             </div>
